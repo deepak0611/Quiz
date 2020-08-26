@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Quiz</title>
+
+<style type="text/css">
+  .header{
+    width: 100%;
+    text-align: center;
+    word-spacing: 5px;
+  }
+  .content{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgrey;
+    margin-top: 50px;
+    padding: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    display: none;
+    border-radius: 10px;
+  }
+  input{
+    margin: 8px;
+  }
+  .btn{
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    border:none;
+    width: 100px;
+    padding: 8px;
+    background-color: green;
+    color: white;
+  }
+  #starter{
+     border:none;
+    width: 400px;
+    padding: 8px;
+    background-color:dodgerblue;
+    color: white;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+</style>
+
+  </head>
+  <body>
+    <div class="header">
+      <h1>Test your General knowledge</h1>
+    </div>
+    
+    <center><button  onclick="startagain()" id="starter">Start Test</button></center>  
+
+    <div class="content">
+      <h3><STRONG>Question 1:</STRONG></h3>
+      <h5>Who was the first president of India?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Pandit Jawahar lal nehru</label><br>
+      <input type="radio" name="ans" value="B"><label>Sardar Vallabh Patel</label><br>
+      <input type="radio" name="ans" value="C"><label>Dr. Rajendra Prasad</label><br>
+      <input type="radio" name="ans" value="D"><label>Indra Gandhi</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+    <div class="content">
+      <h3><STRONG>Question 2:</STRONG></h3>
+      <h5>Who was the first Prime minister of India?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Pandit Jawahar lal nehru</label><br>
+      <input type="radio" name="ans" value="B"><label>Narendra Modi</label><br>
+      <input type="radio" name="ans" value="C"><label>Dr. Rajendra Prasad</label><br>
+      <input type="radio" name="ans" value="D"><label>Lal Bahadur Shastri</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+    <div class="content">
+      <h3><STRONG>Question 3:</STRONG></h3>
+      <h5>Who is known as "Iron Man" of India?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Vivekanand</label><br>
+      <input type="radio" name="ans" value="B"><label>Sardar Vallabh Patel</label><br>
+      <input type="radio" name="ans" value="C"><label>Subhash chandra bose</label><br>
+      <input type="radio" name="ans" value="D"><label>Bhagat Singh</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+     <div class="content">
+      <h3><STRONG>Question 4:</STRONG></h3>
+      <h5>World's tallest statue is located at :</h5>
+
+      <input type="radio" name="ans" value="A"><label>USA</label><br>
+      <input type="radio" name="ans" value="B"><label>Spain</label><br>
+      <input type="radio" name="ans" value="C"><label>Japan</label><br>
+      <input type="radio" name="ans" value="D"><label>India</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+    <div class="content">
+      <h3><STRONG>Question 5:</STRONG></h3>
+      <h5>What is the capital of USA?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Wellington</label><br>
+      <input type="radio" name="ans" value="B"><label>Ney York</label><br>
+      <input type="radio" name="ans" value="C"><label>Washington DC</label><br>
+      <input type="radio" name="ans" value="D"><label>San Fransisco</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+    <div class="content">
+      <h3><STRONG>Question 6:</STRONG></h3>
+      <h5>Who was the India’s first Deputy Prime Minister?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Sardar Vallabhai Patel</label><br>
+      <input type="radio" name="ans" value="B"><label>Morarji Desai</label><br>
+      <input type="radio" name="ans" value="C"><label>Choudhary Charan Singh</label><br>
+      <input type="radio" name="ans" value="D"><label>Jagjivan Ram</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+    <div class="content">
+      <h3><STRONG>Question 7:</STRONG></h3>
+      <h5>Who was the first Indian woman to win a Nobel Peace Prize?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Mother Teresa</label><br>
+      <input type="radio" name="ans" value="B"><label>Indira Gandhi</label><br>
+      <input type="radio" name="ans" value="C"><label>Margret Thatcher</label><br>
+      <input type="radio" name="ans" value="D"><label>Pratibha Devi Singh Patil</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+    <div class="content">
+      <h3><STRONG>Question 8:</STRONG></h3>
+      <h5>Which of the following is knwn as "Red Planet" ?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Jupiter</label><br>
+      <input type="radio" name="ans" value="B"><label>Earth</label><br>
+      <input type="radio" name="ans" value="C"><label>Venus</label><br>
+      <input type="radio" name="ans" value="D"><label>Mars</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+    <div class="content">
+      <h3><STRONG>Question 9:</STRONG></h3>
+      <h5>Which of the following is knwn as "Pink city" ?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Lucknow</label><br>
+      <input type="radio" name="ans" value="B"><label>Banglore</label><br>
+      <input type="radio" name="ans" value="C"><label>Jaipur</label><br>
+      <input type="radio" name="ans" value="D"><label>Jhunjhunu</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+    <div class="content">
+      <h3><STRONG>Question 10:</STRONG></h3>
+      <h5>In which state "Ayodhya" city is located?</h5>
+
+      <input type="radio" name="ans" value="A"><label>Rajasthan</label><br>
+      <input type="radio" name="ans" value="B"><label>Uttrakhand</label><br>
+      <input type="radio" name="ans" value="C"><label>Tamil Nadu</label><br>
+      <input type="radio" name="ans" value="D"><label>UP</label><br>
+
+      <button class="btn" onclick="pagination()">Next ></button>
+      
+    </div>
+
+    <div class="content" style="padding: 80px;">
+      <center>
+      <h5 style="color: green;">You have completed your test!</h5>
+
+      <h6>You score:</h6>
+      <p id="res">3/3</p>
+
+      <h5 style="color: orange;">You should feel proud of you.</h5>
+      </center>
+      <button class="btn" onclick="startagain()">Start again</button>
+      
+    </div>
+
+
+    <script type="text/javascript">
+      var pages=document.getElementsByClassName('content');
+      var i=0,j=0,score=0,k=0;
+      var sol=["C","A","B","D","C","A","A","D","C","D"];
+
+      function startagain(){
+        i=0;score=0;k=0;
+        document.getElementById("starter").style.display="none";
+        for(j=0;j<pages.length;j++){
+          if(j==i){pages[i].style.display="block";}
+          else{pages[j].style.display="none";}
+        }
+        
+        i++;
+      }
+
+      function pagination(){
+
+        if(i==0){document.getElementById("starter").style.display="none";}
+        var x=document.getElementsByName("ans");
+
+        for(j=k;j<k+4;j++){
+          if(x[j].checked){
+            if(x[j].value == sol[i-1]){
+              score++;
+            }
+          }
+        }
+        k+=4;
+        for(j=0;j<pages.length;j++){
+          if(j==i){pages[i].style.display="block";}
+          else{pages[j].style.display="none";}
+        }        
+        i++;
+        if(i==pages.length){          
+          document.getElementById("res").innerHTML= score.toString()  +"/"+ sol.length.toString();
+        }
+
+      }
+
+      
+
+    </script>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
