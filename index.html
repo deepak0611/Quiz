@@ -15,12 +15,20 @@
 
 
   </head>
-  <body>
-    <div class="header">
-      <h1>Test your General knowledge</h1>
+  <body onload="writer()" style="background-color: hsl(144, 11%, 16%)">
+    <div class="container" style="max-width: 600px;height: 765px; background-color: hsl(144, 11%, 16%);padding: 0px;">
+    <div class="header container-fluid">
+      <font id="sitename">Short Quiz</font>
     </div>
+
+    <p id="scnt">
+      
+    </p>
     
-    <center><button  onclick="startagain()" id="starter">Start Test</button></center>  
+    <center><button  onclick="startagain()" id="starter">Start Quiz</button></center>  
+
+    
+
 
     <div class="content">
       <h3><STRONG>Question 1:</STRONG></h3>
@@ -153,15 +161,25 @@
 
     <div class="content" style="padding: 80px;">
       <center>
-      <h5 style="color: green;">You have completed your test!</h5>
+      <h5 style="color: green;">Quiz Finished!</h5>
 
-      <h6>You score:</h6>
-      <p id="res">3/3</p>
+      <h5>You score:</h5>
+      <p id="res"></p>
 
-      <h5 style="color: orange;">You should feel proud of you.</h5>
-      </center>
-      <button class="btn" onclick="startagain()">Start again</button>
+      <h5 style="color: orange;">Congrats!</h5>
       
+
+      <button class="btn" onclick="startagain()">Start again</button>
+      </center>
+      
+    </div>
+
+
+
+
+
+
+
     </div>
 
 

@@ -36,3 +36,17 @@ function pagination(){
   }
 
 }
+
+var wstr="Hello friend, This is just a simple general knowledge quiz. It has 10 questions. At the end you will get your marks for the quiz. So let's start the quiz.";
+function writer(){
+  var id=0;
+  var myVar = setInterval(wchar, 50);
+  function wchar(){
+    document.getElementById("scnt").innerHTML+= wstr[id];
+    id++;
+    if(id== wstr.length){
+      clearTimeout(myVar);
+      document.getElementById("starter").style.display="block";
+    }
+  }
+}
